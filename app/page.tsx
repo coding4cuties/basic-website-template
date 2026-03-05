@@ -3,6 +3,8 @@ export default function Home() {
     <main>
       <div>hello!!!</div>
       <div>hello!!!</div>
+      <div>hello!!!</div>
+      <div>hello!!!</div>
     </main>
   );
 }
