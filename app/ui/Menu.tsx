@@ -1,9 +1,9 @@
 "use client";
-import pageData from "./pageData";
+import siteData from "./siteData";
 import { MenuItem } from "./MenuItem";
 
 export function Menu() {
-  const getMenuItems = pageData.pages.map((item, index) => {
+  const getMenuItems = siteData.pages.map((item, index) => {
     return <MenuItem title={item.title} index={index} key={index} />;
   });
 
@@ -34,7 +34,7 @@ export function Menu() {
             {getMenuItems}
           </ul>
         </div>
-        <h1 className=" text-xl">{pageData.websiteTitle}</h1>
+        <h1 className=" text-xl">{siteData.websiteTitle}</h1>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{getMenuItems}</ul>
