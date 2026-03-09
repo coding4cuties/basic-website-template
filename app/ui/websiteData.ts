@@ -6,26 +6,26 @@ export type PageData ={
     image?: string;
     imageAltText?: string
     title: string;
-    descriptionHTML: ReactNode ;
+    pageContent: ReactNode ;
 }
 
-const pageData: {pages:PageData[], websiteTitle:string}= {
+const websiteData: {pages:PageData[], websiteTitle:string}= {
   pages: [
     {
       title: "Section 1",
       imageAltText: "an orange slice on a purple background with a sideways winky face on top",
-      descriptionHTML: Section1(),
+      pageContent: Section1(),
       image: "./images/image1.png",
     },
 
     {
       title: "Section 2",
-      descriptionHTML: Section2(),
+      pageContent: Section2(),
     },
 
     {
       title: "Section 3",
-      descriptionHTML: Section3(),
+      pageContent: Section3(),
       imageAltText: "alternating oranges and orange slices in a grid pattern on a purple background",
       image: "./images/image3.png",
     },
@@ -34,4 +34,4 @@ const pageData: {pages:PageData[], websiteTitle:string}= {
   websiteTitle: "Website Title",
 };
 
-export default pageData;
+export default websiteData;

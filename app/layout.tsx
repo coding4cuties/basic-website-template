@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import pageData from "./ui/pageData";
+import pageData from "./ui/websiteData";
 
 export const metadata: Metadata = {
   title: pageData.websiteTitle,
