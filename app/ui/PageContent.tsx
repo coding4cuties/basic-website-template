@@ -1,10 +1,10 @@
-import siteData from "./siteData";
+import websiteData from "./websiteData";
 import { useContext } from "react";
 
 import { PageIndexContext } from "./PageIndexContext";
 export function PageContent() {
   const { state } = useContext(PageIndexContext);
-  const page = siteData.pages[state];
+  const page = websiteData.pages[state];
   console.log(page.image);
   return (
     <div className={"hero-content flex-col lg:flex-row"}>

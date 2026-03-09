@@ -9,7 +9,7 @@ export type PageData ={
     pageContent: ReactNode ;
 }
 
-const siteData: {pages:PageData[], websiteTitle:string}= {
+const websiteData: {pages:PageData[], websiteTitle:string}= {
   pages: [
     {
       title: "About Bats",
@@ -34,4 +34,4 @@ const siteData: {pages:PageData[], websiteTitle:string}= {
   websiteTitle: "I love Bats",
 };
 
-export default siteData;
+export default websiteData;
