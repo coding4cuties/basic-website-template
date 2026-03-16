@@ -5,7 +5,6 @@ import { PageIndexContext } from "./PageIndexContext";
 export function PageContent() {
   const { state } = useContext(PageIndexContext);
   const page = websiteData.pages[state];
-  console.log(page.image);
   return (
     <div className={"hero-content flex-col lg:flex-row"}>
       {page.image ? (
