@@ -1,21 +1,16 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
  .btn-custom {
-  color: green;
+  color: #004D00;
   background-color: yellowgreen;
  }
  .menu-custom{
   background-color: lightgreen;
  }
 
- h1 {
-  font-family: BerlinXBold; /* use font */
-}
-
 body{
-  color: green;
+  color: #004D00;
 }
 
 li{
