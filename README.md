@@ -1,15 +1,10 @@
-# Basic Website Template 🌟
+# Basic Website Template 🌆 (Geo Cities Version)
 
 ## About
 
 This basic website template offers a layout, styling, and deployment scheme that you can then easily copy and use for your own projects. It's also moblie friendly and dynamically populates the pages from data file! This project has a [video tutorial](TBD) that explains how to use it.
 
-You can explore the template at the deployed version [here](https://coding4cuties.github.io/basic-website-template/).
-
-Two separate version exist on branches you can run locally if you like:
-
-- [I Love Bats](https://github.com/coding4cuties/basic-website-template/tree/I-love-bats!) (same structure; differently themed and populated with bats photos)
-- [Geo Cities](https://github.com/coding4cuties/basic-website-template/tree/geo-cities) (slightly different structure; differently theme with 90's gifs)
+This version has no deployment, but you can run it locally.
 
 ## How to run locally
 
@@ -22,3 +17,5 @@ Two separate version exist on branches you can run locally if you like:
 This template is built off [Next.js GitHub Page static site template](https://github.com/nextjs/deploy-github-pages).
 
 Icons from [FlatIcons.com](https://www.flaticon.com/)
+
+Gifs from [GifCities.org](https://gifcities.org/)

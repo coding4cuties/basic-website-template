@@ -3,7 +3,7 @@ import "./globals.css";
 import pageData from "./ui/websiteData";
 
 export const metadata: Metadata = {
-  title: pageData.websiteTitle,
+  title: "Geocites Website Example!",
 };
 
 export default function RootLayout({

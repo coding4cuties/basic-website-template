@@ -1,22 +1,18 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@font-face {
-  font-family: BerlinXBold; /* set name */
-  src: url(./../public/berlin.x-bold.ttf); /* url of the font */
-}
- .btn-custom {
-  color: #342463;
-  background-color: #ffaf94;
- }
- .menu-custom{
-  background-color: #babae9;
- }
-
- h1 {
-  font-family: BerlinXBold; /* use font */
+.main-box{
+    background-color: black;
+    border: double 7px /* total added thickness of lines and gap between */ white;
+    margin: 10px;
 }
 
-body{
-  color:  #342463;
+.link{
+  color:#DC74CD;
+}
+
+html { 
+font-family: "Lucida Console", "Courier New", monospace;
+background-color: black;
+color: white
 }

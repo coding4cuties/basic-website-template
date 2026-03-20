@@ -1,19 +1,18 @@
 "use client";
-import { Menu } from "./ui/Menu";
 import { PageContent } from "./ui/PageContent";
-import PageIndexContextProvider from "./ui/PageIndexContext";
+import { VisitorCounter } from "./ui/VisitorCounter";
+import websiteData from "./ui/websiteData";
 
 export default function Home() {
   return (
     <main>
-      <PageIndexContextProvider>
-        <div className="hero bg-base-200   min-h-screen flex flex-col">
-          <Menu />
-          <div className="main-box">
-            <PageContent />
-          </div>
-        </div>
-      </PageIndexContextProvider>
+      <hr />
+      <div className="hero min-h-screen flex flex-col">
+        {websiteData.pages.map((page) => {
+          return <PageContent pageData={page} />;
+        })}
+        <VisitorCounter />
+      </div>
     </main>
   );
 }

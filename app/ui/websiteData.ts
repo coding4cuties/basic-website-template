@@ -1,37 +1,54 @@
 import { ReactNode } from "react";
-
-import { Section1, Section2, Section3 } from "./pages";
+import { About, Blog, Content } from "./pages";
 
 export type PageData ={
-    image?: string;
-    imageAltText?: string
-    title: string;
-    pageContent: ReactNode ;
+    image: string;
+    imageAltText: string
+    titleImage: string;
+    titleImageAltText: string;
+    titleDecorator: string;
+    titleDecoratorAltText: string;
+    descriptionHTML: ReactNode ;
 }
 
-const websiteData: {pages:PageData[], websiteTitle:string}= {
+const websiteData = {
   pages: [
     {
-      title: "Section 1",
-      imageAltText: "an orange slice on a purple background with a sideways winky face on top",
-      pageContent: Section1(),
-      image: "./images/image1.png",
+      descriptionHTML: About(),
+      image: "images/profile.jpg",
+      imageAltText:"photo of fluffy light colored cat with big round eyes looking at the camera adorably.",
+      titleImage: "images/hello.gif",
+      titleImageAltText:" 'Hi, I'm Clare' in sparkling pink letters",
+      titleDecorator:
+        "https://blob.gifcities.org/gifcities/VBX3WPIF3XPHZIO4REYIZHZINHA7MHMB.gif",
+        titleDecoratorAltText:"calico cat with a tail waving back and forth"
+    },
+     
+
+    {
+      descriptionHTML: Blog(),
+      image:
+        "https://blob.gifcities.org/gifcities/CTOATOVETCCU6ZF6G627QBBEKY5CJA5B.gif",
+        imageAltText:"Small white dog sitting at a 90's computer monitor and keyboard. His tail waves back and forth.",
+      titleImage: "images/blog.gif",
+      titleImageAltText:"'Blog' in sparkling pink letters",
+      titleDecorator:
+        "https://blob.gifcities.org/gifcities/4NLLNNVMSTBSRHPMCSX5E33SXAVC46BK.gif",
+        titleDecoratorAltText:"typewriting typing back and forth"
     },
 
     {
-      title: "Section 2",
-      pageContent: Section2(),
-    },
-
-    {
-      title: "Section 3",
-      pageContent: Section3(),
-      imageAltText: "alternating oranges and orange slices in a grid pattern on a purple background",
-      image: "./images/image3.png",
+      descriptionHTML: Content(),
+      image:
+        "https://blob.gifcities.org/gifcities/HPQGPOTYZCY5BYHFDTIBR4KYASMI73XM.gif",
+        imageAltText:"low resolution 3d render of a nikon camera rotating 360 degrees",
+      titleImage: "images/content.gif",
+            titleImageAltText:"'Content Creation' in sparkling pink letters",
+      titleDecorator:
+        "https://blob.gifcities.org/gifcities/VEBI432J34B3VKRLQ5VNCRNZQNBPBNKE.gif",
+         titleDecoratorAltText:"pixel art dslr camera flashing"
     },
   ],
-
-  websiteTitle: "Website Title",
 };
 
-export default websiteData;
+export  default websiteData;
