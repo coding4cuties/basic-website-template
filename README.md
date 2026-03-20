@@ -19,3 +19,5 @@ This template is built off [Next.js GitHub Page static site template](https://gi
 Icons from [FlatIcons.com](https://www.flaticon.com/)
 
 Gifs from [GifCities.org](https://gifcities.org/)
+
+Animated Text from [Textanim](https://textanim.com/)
