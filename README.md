@@ -2,7 +2,7 @@
 
 ## About
 
-This basic website template offers a layout, styling, and deployment scheme that you can then easily copy and use for your own projects. It's also moblie friendly and dynamically populates the pages from data file! This project has a [video tutorial](TBD) that explains how to use it.
+This basic website template offers a layout, styling, and deployment scheme that you can then easily copy and use for your own projects. It's also moblie friendly and dynamically populates the pages from data file! This project has a [video tutorial](https://www.youtube.com/watch?v=va9VXXfvjSY) that explains how to use it.
 
 You can explore the template at the deployed version [here](https://coding4cuties.github.io/basic-website-template/).
 
