@@ -4,7 +4,7 @@ import { MenuItem } from "./MenuItem";
 
 export function Menu() {
   const getMenuItems = websiteData.pages.map((item, index) => {
-    return <MenuItem title={item.title} index={index} key={index} />;
+    return <MenuItem item={item} index={index} key={index} />;
   });
 
   return (
@@ -34,7 +34,7 @@ export function Menu() {
             {getMenuItems}
           </ul>
         </div>
-        <h1 className=" text-xl">{websiteData.websiteTitle}</h1>
+        <h1 className="text-xl">{websiteData.websiteTitle}</h1>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{getMenuItems}</ul>
