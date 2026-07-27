@@ -3,19 +3,19 @@ import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
 export default function Page() {
-  const searchParams = useSearchParams();
+  function HandleSubmit() {
+    const searchParams = useSearchParams();
 
-  const res = searchParams.get("res");
-  return (
-    // You could have a loading skeleton as the `fallback` too
-    <Suspense>
-      <>
-        (!res) :(
+    const res = searchParams.get("res");
+    if (!res) {
+      return (
         <p className="py-4 text-center lg:max-w-7/10 m-auto ">
           You've found the submit page without submitting the form. You
           shouldn't be here! 😱
         </p>
-        ) ? (
+      );
+    } else {
+      return (
         <div className="flex flex-col justify-center">
           <h1 className={"text-6xl text-center m-3"}>
             {res == "1"
@@ -29,8 +29,13 @@ export default function Page() {
               : "Something went wrong and I wasn't able to get your request. If this keeps happening please contact me."}
           </p>
         </div>
-        )
-      </>
+      );
+    }
+  }
+  return (
+    // You could have a loading skeleton as the `fallback` too
+    <Suspense>
+      <HandleSubmit />
     </Suspense>
   );
 }
