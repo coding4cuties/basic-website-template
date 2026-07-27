@@ -11,7 +11,7 @@ const websiteData: {pages:PageData[], websiteTitle:string}= {
   pages: [
     {
       title: "Section 1",
-      path:baseURL,
+      path:`./${baseURL}`,
     },
 
     {
