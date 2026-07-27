@@ -14,6 +14,7 @@ export default function Page() {
          different images. */}
         {Array.from({ length: 9 }, (_, i) => (
           <img
+            key={i}
             alt={
               "an orange on an orange background with purple star next to it"
             }
