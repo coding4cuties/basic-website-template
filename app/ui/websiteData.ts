@@ -11,17 +11,17 @@ const websiteData: {pages:PageData[], websiteTitle:string}= {
   pages: [
     {
       title: "Section 1",
-      path:'./',
+      path:'/',
     },
 
     {
       title: "Section 2",
-      path: './portfolio',
+      path: 'portfolio',
     },
 
     {
       title: "Section 3",
-      path:"./contact"
+      path:"contact"
 
     },
   ],
