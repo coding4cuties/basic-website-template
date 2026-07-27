@@ -1,6 +1,4 @@
-import { ReactNode } from "react";
 
-const baseURL="basic-website-template"
 export type PageData ={
   
     title: string;
@@ -11,7 +9,7 @@ const websiteData: {pages:PageData[], websiteTitle:string}= {
   pages: [
     {
       title: "Section 1",
-      path:`./`,
+      path:"./",
     },
 
     {
